@@ -1,6 +1,6 @@
 ## Demo
 
-...
+http://aramkocharyan.github.com/infinite-scroller/
 
 ## How To Use
 
