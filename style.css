@@ -33,9 +33,13 @@ body, html {
 	color: #333;
 }
 
+code,
 pre {
 	background: #eee;
+	font-family: 'Droid Sans Mono', monospace;
+}
+
+pre {
 	width: 600px;
 	padding: 5px;
-	font-family: 'Droid Sans Mono', monospace;
 }
