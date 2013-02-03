@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Infinite JavaScript Scroller</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="scroller.js"></script>
+	<link rel="stylesheet"  href="scroller.css" type="text/css" />
+	<link rel="stylesheet"  href="style.css" type="text/css" />
+	<script type="text/javascript">
+		(function ($) {
+			$(function () {
+		        var args = $('.container').infiniteScroll();
+		        $('.direction-button').click(function () {
+		            args.direction *= -1;
+		        });
+		    });
+		})(jQuery);
+	</script>
+</head>
+<body>
+
+<h1>jQuery Infinite Scroller</h1>
+<p>This is an example of an infinite scroller. The contents are duplicated and scrolled endlessly.</p>
+
+<div class="container">
+	<div class="box">0</div>
+	<div class="box">1</div>
+	<div class="box">2</div>
+	<div class="box">3</div>
+	<div class="box">4</div>
+	<div class="box">5</div>
+</div>
+<a href="#" class="direction-button">Change Direction</a>
+
+<h2>How To Use</h2>
+<pre>
+var args = $('.container').infiniteScroll();
+$('.direction-button').click(function () {
+    args.direction *= -1;
+});
+</pre>
+
+
+<h2>Settings API</h2>
+<p>The <code>.infiniteScroll()</code> function takes an object as an argument. These are the default values:</p>
+
+<pre>
+innerCount: 3, // How many duplicates to create
+direction: -2, // Direction and magnitude of movement
+freq: 50, // Frequency of update in ms
+pause: true // Whether to pause on mouseover
+</pre>
+
+<p><a href="scroller.js">View the Source</a> and grab it from GitHub.</p>
+</body>
+</html>

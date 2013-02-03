@@ -1,0 +1,41 @@
+/* These are unrelated to the scroller */
+
+@import url(http://fonts.googleapis.com/css?family=Mako);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body, html {
+	font-family: 'Mako', arial, sans-serif;
+}
+
+.container {
+	width: 400px;
+	height: 50px;
+	border: 1px solid #333;
+	background: #eee;
+	margin-bottom: 10px;
+}
+
+.box {
+	float: left;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 5px;
+	background: #00b4e1;
+	color: #fff;
+}
+
+.direction-button {
+	background: #ccc;
+	padding: 5px;
+	text-decoration: none;
+	color: #333;
+}
+
+pre {
+	background: #eee;
+	width: 600px;
+	padding: 5px;
+	font-family: 'Droid Sans Mono', monospace;
+}

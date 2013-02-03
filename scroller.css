@@ -1,0 +1,13 @@
+.scroll {
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-inner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.scroll-inner-content {
+    float: left;
+}
